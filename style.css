@@ -1,0 +1,63 @@
+:root {
+  /*color variables*/
+  --clr-primary: #6aeeb5;
+  --clr-primary-hover: #29e6a7;
+  --clr-grar100: #f0f7f8;
+  --clr-gray200: #cfd8dc;
+  --bkground: linear-gradient(to right, rgb(186, 198, 238), rgb(226, 226, 226));
+
+  /* border radius*/
+  --radius: 0.2rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sofia", sans-serif;
+  background: var(--bkground);
+}
+
+.nav-list {
+  background: linear-gradient(to left, rgb(186, 198, 238), rgb(226, 226, 226));
+  box-shadow: 0px 0px 10px var(--clr-gray200);
+  margin: 0;
+  padding: 1rem 0;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 2rem;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+.btn-primary {
+  font-family: "Sofia";
+  font-size: 1rem;
+  background: var(--clr-primary);
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 0 var(--clr-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--clr-primary-hover);
+}
